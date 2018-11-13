@@ -4,7 +4,7 @@
   "version": "1.0.0",
   "author": "John Agan <johnagan@gmail.com>",
   "scripts": {
-    "test": "mocha",
+    "test": "mocha --require @babel/register",
     "deploy": "serverless deploy",
     "build": "babel scripts/* -d dist"
   },
@@ -16,6 +16,7 @@
     "@babel/cli": "^7.1.5",
     "@babel/core": "^7.1.5",
     "@babel/preset-env": "^7.1.5",
+    "@babel/register": "^7.0.0",
     "aws-sdk": "^2.9.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
