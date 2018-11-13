@@ -5,16 +5,20 @@
   "author": "John Agan <johnagan@gmail.com>",
   "scripts": {
     "test": "mocha",
-    "deploy": "serverless deploy"
+    "deploy": "serverless deploy",
+    "build": "babel scripts/* -d dist"
   },
   "dependencies": {
     "axios": "^0.15.3",
     "debug": "^2.6.1"
   },
   "devDependencies": {
+    "@babel/cli": "^7.1.5",
+    "@babel/core": "^7.1.5",
+    "@babel/preset-env": "^7.1.5",
+    "aws-sdk": "^2.9.0",
     "chai": "^3.5.0",
     "chai-as-promised": "^6.0.0",
-    "aws-sdk": "^2.9.0",
     "mocha": "^3.2.0"
   }
 }
